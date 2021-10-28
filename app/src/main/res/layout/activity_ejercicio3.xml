@@ -19,7 +19,7 @@
             android:id="@+id/EJ3enunciado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ejercicio 2" />
+            android:text="Ejercicio 3" />
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:id="@+id/EJ3Texto1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Introduce tu nombre" />
+            android:text="Introduce el primer cateto" />
     </TableRow>
 
     <TableRow
@@ -52,7 +52,7 @@
             android:id="@+id/EJ3texto2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Introduce tu apellido" />
+            android:text="Introduce el segundo cateto" />
     </TableRow>
 
     <TableRow
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Greeting" />
+            android:text="Calcula la hipotenusa" />
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
@@ -91,7 +91,7 @@
             android:id="@+id/EJ3Resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Introduce tu apellido" />
+            android:text="Hipotenusa" />
     </TableRow>
 
 </TableLayout>
