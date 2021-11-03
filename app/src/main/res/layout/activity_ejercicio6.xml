@@ -7,9 +7,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ejercicio5"
+    tools:context=".Ejercicio6"
 
-    android:stretchColumns="0">
+    android:stretchColumns="*">
 
     <TableRow
         android:layout_width="match_parent"
@@ -19,19 +19,85 @@
             android:id="@+id/EJ6enunciado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ejercicio 4\nAdivina el numero" />
+            android:text="Ejercicio 6\nTic-Tac-Toe" />
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/EJ6button2"
+            android:id="@+id/EJ611"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Nuevo Juego" />
+            android:text="  " />
+        <Button
+            android:id="@+id/EJ612"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
+        <Button
+            android:id="@+id/EJ613"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/EJ621"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
+        <Button
+            android:id="@+id/EJ622"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
+        <Button
+            android:id="@+id/EJ623"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/EJ631"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
+        <Button
+            android:id="@+id/EJ632"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
+        <Button
+            android:id="@+id/EJ633"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="  " />
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
@@ -39,47 +105,11 @@
 
         <TextView
             android:id="@+id/EJ6Texto1"
-            android:layout_width="wrap_content"
+            android:layout_width="83dp"
             android:layout_height="wrap_content"
             android:text="Elige un numero entre 1 y 100" />
     </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <EditText
-            android:id="@+id/EJ6in1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:minHeight="48dp" />
-    </TableRow>
-
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <Button
-            android:id="@+id/EJ6button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="Comprueba" />
-    </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <TextView
-            android:id="@+id/EJ6Resultado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tu numero no es" />
-    </TableRow>
 
 </TableLayout>
 
