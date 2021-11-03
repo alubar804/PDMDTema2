@@ -8,12 +8,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ejercicio5"
-
-    android:stretchColumns="0">
+    android:id="@+id/laidout"
+    android:stretchColumns="0"
+    >
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/EJ5enunciado"
@@ -23,66 +25,67 @@
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <Button
             android:id="@+id/EJ5button1"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:text="1" />
+
         <Button
             android:id="@+id/EJ5button2"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="2" />
         <Button
             android:id="@+id/EJ5button3"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:text="3" />
         <Button
             android:id="@+id/EJ5button4"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:text="4" />
         <Button
             android:id="@+id/EJ5button5"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:text="5" />
         <Button
             android:id="@+id/EJ5button6"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:text="7" />
+            android:text="6" />
     </TableRow>
-
-
-
 
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
 
         <Button
             android:id="@+id/EJ5buttonReload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="Reload" />
     </TableRow>
     <TableRow
@@ -93,7 +96,8 @@
             android:id="@+id/EJ5Resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tu numero no es" />
+            android:gravity="center"
+            android:text="" />
     </TableRow>
 
 </TableLayout>
