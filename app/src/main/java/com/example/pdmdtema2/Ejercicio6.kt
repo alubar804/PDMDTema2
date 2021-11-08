@@ -2,30 +2,36 @@ package com.example.pdmdtema2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_ejercicio6.*
 
 class Ejercicio6 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio6)
-            val juego = arrayOf(
+        var juego = arrayOf(
                 arrayOf(0, 0, 0),
                 arrayOf(0, 0, 0),
                 arrayOf(0, 0, 0)
                 )
-        var  turno="O"
+        var turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
+        
                     comprueba(juego)
         EJ611.setOnClickListener {
             if (!EJ611.text.equals("X") || !EJ611.text.equals("O")){
                 EJ611.text=turno
                 if(turno.equals("O")){
                     juego[0][0]=1
-                     turno="X"
-                    comprueba(juego)
+                      turno="X"
+                   
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[0][0]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
+
                     comprueba(juego)
                 }
             }
@@ -35,11 +41,13 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ612.text=turno
                 if(turno.equals("O")){
                     juego[0][1]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[0][1]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
@@ -49,11 +57,13 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ613.text=turno
                 if(turno.equals("O")){
                     juego[0][2]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[0][2]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
@@ -63,11 +73,13 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ621.text=turno
                 if(turno.equals("O")){
                     juego[1][0]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[1][0]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
@@ -77,11 +89,13 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ622.text=turno
                 if(turno.equals("O")){
                     juego[1][1]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[1][1]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
@@ -91,11 +105,13 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ623.text=turno
                 if(turno.equals("O")){
                     juego[1][2]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[1][2]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
@@ -105,11 +121,13 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ631.text=turno
                 if(turno.equals("O")){
                     juego[2][0]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[2][0]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
@@ -119,11 +137,13 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ632.text=turno
                 if(turno.equals("O")){
                     juego[2][1]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[2][1]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
@@ -133,16 +153,34 @@ class Ejercicio6 : AppCompatActivity() {
                   EJ633.text=turno
                 if(turno.equals("O")){
                     juego[2][2]=1
-                     turno="X"
+                      turno="X"
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }else{
                     juego[2][2]=-1
-                     turno="O"
+                    turno="O"                    
+                    EJ6enunciado.text="Es el turno de $turno"
                     comprueba(juego)
                 }
             }
         }
-
+        reset.setOnClickListener{
+            juego = arrayOf(
+                arrayOf(0, 0, 0),
+                arrayOf(0, 0, 0),
+                arrayOf(0, 0, 0)
+            )
+            EJ611.text=""
+            EJ612.text=""
+            EJ613.text=""
+            EJ621.text=""
+            EJ622.text=""
+            EJ623.text=""
+            EJ631.text=""
+            EJ632.text=""
+            EJ633.text=""
+            EJ6Texto1.text="Partida en curso"
+        }
 
     }
 fun comprueba(juego: Array<Array<Int>>) {
@@ -173,6 +211,7 @@ fun comprueba(juego: Array<Array<Int>>) {
             }
         }
     }
+
 }
 
 }

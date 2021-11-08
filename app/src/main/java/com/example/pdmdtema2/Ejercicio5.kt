@@ -11,12 +11,14 @@ class Ejercicio5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio5)
-        var numSectreto = 0
+        var numSectreto =(1..6).random()
         val mlayout = findViewById<TableLayout>(R.id.laidout);
+        mlayout.setBackgroundColor(getResources().getColor(R.color.blue));
         EJ5buttonReload.setOnClickListener {
             numSectreto = (1..6).random()
             //esto lo muestro para que sea mas facil identificar si funciona bien
             EJ5Resultado.text=numSectreto.toString()
+            mlayout.setBackgroundColor(getResources().getColor(R.color.blue));
         }
         EJ5button1.setOnClickListener {
             if (numSectreto == 1) {
